@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"); // Rubik 300 400 500
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Rubik";
+}
+
+p {
+  margin: 0;
+  user-select: none;
+}
+
+h1,
+h2,
+h3 {
+  user-select: none;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+}
+
+.container {
+  height: 100vh;
+
+  padding: 115px 40px;
+  background-color: $brightBlue;
+
+  h1 {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

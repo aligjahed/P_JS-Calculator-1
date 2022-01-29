@@ -1,0 +1,123 @@
+.calc {
+  background-color: $blue;
+
+  height: 100%;
+  width: 100%;
+  max-width: 295px;
+  min-height: 460px;
+
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  &__view {
+    background-color: $white;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    text-align: right;
+    height: 70px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    h3 {
+      font-size: 35px;
+      margin: 10px 0;
+    }
+
+    .preview {
+      float: left;
+      margin-top: -10px;
+      color: rgb(43, 41, 41);
+    }
+  }
+
+  &__action {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px 15px;
+
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+
+    div {
+      position: relative;
+      background-color: $white;
+      border-radius: 50%;
+
+      height: 55px;
+
+      padding: 10px;
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+#op_acc {
+  position: relative;
+  background-color: $white;
+
+  border-radius: 15px;
+  font-size: 30px;
+
+  height: 40px;
+  margin-top: 15px;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.inputOp {
+  float: left;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+#op_acc:active {
+  background-color: $darkRed;
+  color: $white;
+}
+
+.button:active {
+  background-color: $darkRed;
+  color: $white;
+}
+
+@media screen and (min-width: 550px) {
+  .button:hover {
+    background-color: $red;
+    color: $white;
+  }
+
+  .button:active {
+    background-color: $darkRed;
+    color: $white;
+  }
+
+  #op_acc:hover {
+    background-color: $red;
+    color: $white;
+  }
+
+  #op_acc:active {
+    background-color: $darkRed;
+    color: $white;
+  }
+}
